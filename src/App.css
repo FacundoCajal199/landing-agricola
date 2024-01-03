@@ -1,0 +1,29 @@
+.color{
+color: rgb(0, 255, 42);
+}
+.ajustarimagen{
+    width: 25%;
+}
+@media (min-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+  }
+  
+  /* Estilo para pantallas pequeñas */
+  @media (max-width: 767px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+    .ajustarimagen{
+        width: 90%;
+    }
+}
