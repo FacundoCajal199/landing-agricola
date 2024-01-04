@@ -133,17 +133,17 @@ const Modulos = () => {
   return (
     <>
     <section className='d-flex justify-content-center mt-5'>
-    <div className="faq-section">
-      <h2 className='h1'>Toca para desplegar el Temario⬇️ </h2>
+    <div className="">
+      <h4 className='h1'>Toca para desplegar el Temario⬇️ </h4>
       {faqData.map((item, index) => (
-        <div key={index} className="faq-item" onClick={() => handleQuestionClick(index)}>
-          <h3>{item.question}</h3>
-          {activeQuestionIndex === index && <p className="faq-answer">{item.answer}</p>}
+        <div key={index} className="estilos-modulo" onClick={() => handleQuestionClick(index)}>
+          <h5>{item.question}</h5>
+          {activeQuestionIndex === index && <p className="estilo-respuesta">{item.answer}</p>}
         </div>
       ))}
     </div>
     </section>
-     
+     <h5 className="text-center my-4 container">Sabemos que puede ser abrumador pensar en cultivar tus propios alimentos en casa,<b className="verde">pero déjanos decirte que en nuestro Curso te explicaremos fácil y paso a paso  todos los secretos que necesitas saber para cultivar y cosechar tus propios alimentos orgánicos en el espacio que tengas en casa.</b> </h5>
     </>
    
   );
