@@ -8,6 +8,12 @@ import Modulos from './components/Modulos';
 import Lograr from './components/Quevasalograr';
 import Oferta from './components/Oferta';
 import Testimonios from './components/Testimonios';
+import Bonos from './components/Bonos';
+import Garantia from './components/Garantias';
+import Evidencia from './components/Evidencia';
+import Reoferta from './components/Reoferta';
+import PreguntasYRespuestas from './components/Preguntasfrecuentes';
+
 function App() {
   
 
@@ -21,6 +27,11 @@ function App() {
      <Lograr></Lograr>
      <Oferta></Oferta>
      <Testimonios></Testimonios>
+     <Bonos></Bonos>
+  <Garantia></Garantia>
+  <Evidencia></Evidencia>
+  <Reoferta></Reoferta>
+  <PreguntasYRespuestas></PreguntasYRespuestas>
     </>
   )
 }

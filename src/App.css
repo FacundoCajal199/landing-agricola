@@ -1,6 +1,10 @@
 .color{
 color: rgb(0, 255, 42);
 }
+#root{
+  background-color: #373737;
+  color: #fff;
+}
 .ajustarimagen{
     width: 25%;
 }
@@ -8,33 +12,172 @@ color: rgb(0, 255, 42);
     width: 20%;
 }
 
-    
-  
   .estilos-modulo{
 background-color: greenyellow;
 border-radius: 30px;
 margin-top: 1rem;
 padding: 1rem 1rem;
   }
-  .estilo-respuesta{
-    background-color: rgb(53, 53, 53);
-    padding: 1rem 1rem;
-    color: aliceblue;
-    border-radius: 30px;
-    border: 1px solid #eeeeee;
-  }
+
   .verde{
-color: rgb(69, 113, 2);
+color: rgb(153, 255, 0);
   }
-  /* Estilo para pantallas pequeñas */
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ajustartestimonios{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+  }
+  .ajustar{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     
+  }
+ 
+.ajustarevidencia{
+  width: 25%
+}
+  .bg-rojo{
+background-color: red;
+color: #fff;
+padding: 1rem 1rem;
+  }
+  .ordenarevidencia{
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  .orden {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .bono {
+    border: 1px solid #ffffff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px ;
+    box-shadow: 0px 4px 4px 4px rgba(255, 255, 255, 0.229);
+  }
+  .bono:hover{
+    box-shadow: 0px 4px 4px 4px rgba(255, 255, 255, 0.387);
+  }
+  .colorpreguntas{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    border-radius: 30px ;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .colorpreguntas2{
+background-color:greenyellow;
+color: #000;
+padding: 1rem 1rem;
+border-radius: 30px;
+  }
+  .ajustarbonos{
+    width: 30%;
+  }
+  .bg-bonos{
+    background-color: rgb(61, 61, 61);
+    color: #000000;
+  }
+  .boton{
+    background-color: rgb(43, 255, 0);
+    border-radius: 30px ;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #000000
+    ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    animation: titilar 2s infinite; /* Aplica la animación */
+  }
+  .amarillo{
+    color: yellow;
+    font-size: 1.9rem;
+  }
+  .style-titulos{
+    color: transparent;
+    background-image: linear-gradient(
+      20deg
+      ,
+      #3dd900,
+      #fcfcfc
+      );
+      background-clip:text;
+      -webkit-background-clip:text ; 
+      font-weight: 900;
+   }
+   
+  @keyframes titilar {
+    0% { box-shadow: 0 0 5px #59ff00; }
+    50% { box-shadow: 0 0 20px #00d600, 0 0 30px #44ff00; }
+    100% { box-shadow: 0 0 5px #0f7b03c1; }
+  }
+  @keyframes titilar2 {
+    0% { box-shadow: 0 0 5px #fffb00; }
+    50% { box-shadow: 0 0 20px #ffea00, 0 0 30px #d9ff00; }
+    100% { box-shadow: 0 0 5px #f1dd00c1; }
+  }
+  .tachartexto{
+   
+    text-decoration: line-through;
+  }
+  .verdeoscuro{
+    color: rgb(11, 168, 0);
+  }
+  .verdeoscuro2{
+    color: rgb(11, 168, 0);
+    font-size: 1.8rem;
+  }
+  .bg-amarillo{
+    background-color: yellow;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .ordenimagenes{
+    display: flex;
+justify-content: space-evenly;
+  }
+.carta{
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+.fff{
+  color: #fff;
+}
+.bg-dorado{
+background-color: #c6af00;
+padding: 2rem 2rem;
+margin-top: 0;
+color: #000;
+border-radius: 30px;
+border: 1px solid #ffffff;
+}
+.botonnegro{
+  background-color: #fcfcfc;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  padding: 1rem 1rem;
+  cursor: pointer;
+    animation: titilar2 2s infinite; /* Aplica la animación */
+  
+}
   @media (max-width: 767px) {
     .grid {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
+
     iframe{
-      width: 100%;
-      height: auto;
+     width: 100%;
       margin: 0;
   }
     .ajustarimagen{
@@ -43,12 +186,37 @@ color: rgb(69, 113, 2);
     .ajustarimagen2{
         width: 60%;
     }
-}
-  @media (min-width: 767px) {
-   
-    iframe{
-      width: 60%;
-      height: auto;
-      margin: 0;
+    .ajustartestimonios{
+      width: 100%;
+    }
+    .ajustar{
+      display: grid;
+      grid-template-columns:  1fr;
+      
+   }
+   .ordenarevidencia{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .ajustarevidencia{
+    width: 100%
+  }
+  .ajustarbonos{
+    width: 50%;
+  }
+  .orden {
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+  }
+  .tamañoimagen{
+    width: 100%;
+   }
+   .ordenimagenes{
+    display: flex;
+flex-direction: column;
+align-items: center;
   }
 }
+
+

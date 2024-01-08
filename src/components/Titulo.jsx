@@ -5,8 +5,8 @@ const Titulo =()=>{
 
    return (
 <>
-<h1 className="container text-center">{title}</h1>
-<h4 className="text-center py-4"> <b>¡No</b> importa si tienes poco o mucho espacio para iniciar!</h4>
+<h1 className="container text-center style-titulos py-5">{title}</h1>
+<h4 className="text-center "> <b className="verde">¡No</b> importa si tienes poco o mucho espacio para iniciar!</h4>
 </>
   );
     
