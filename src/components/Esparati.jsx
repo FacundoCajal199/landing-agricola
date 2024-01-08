@@ -8,7 +8,7 @@ const Esparati = ()=>{
       ];
 return (
     <>
-<h1 className="text-center style-titulos">Es para ti si buscas</h1>
+<h1 className="text-center style-titulos my-3">Es para ti si buscas</h1>
 <article className="grid container">
 
     {data.map((item, index) => (

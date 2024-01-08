@@ -9,6 +9,7 @@ const Video = () => {
             <div dangerouslySetInnerHTML={{ __html: embedCode }} />
           </div>
         </section>
+        
       </>
     );
   };

@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+    
     <Titulo></Titulo>
      <Video></Video> 
      <Esparati></Esparati>
